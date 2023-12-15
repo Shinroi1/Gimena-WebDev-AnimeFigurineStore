@@ -1,0 +1,98 @@
+.center {
+    text-align: center;
+    list-style-position: inside;
+    width: 100%;
+}
+
+body{
+    background-image: url(wp4946099.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+form {
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin: 3% auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;    
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
+}
+
+button[type="submit"],
+button[type="reset"]
+{
+    font-size: 125%;
+}
+.group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    justify-content: center;
+}
+
+.Order {
+    font-size: 20px;
+    text-align: center;
+    list-style-position: inside;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: auto;
+    max-width: 500px;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #f70707;
+}
+
+th, td {
+    border: 1px solid #f10d0d;
+    padding: 8px;
+}
+
+.centered {
+    text-align: center;
+}
+
+li{
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
