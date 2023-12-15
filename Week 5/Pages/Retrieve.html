@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve a Order</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1> Anime Figurine Order Details</h1>
+        <form method="POST" action="../Orders/Retrieve.php">
+            <label for="OrderID">Order ID:</label>
+            <input type="text" id="OrderID" name="OrderID" required>
+
+            <button type="submit">Retrieve Order</button>
+        </form>
+
+        <br />
+        
+        <form action="Menu.php">
+            <button type="submit">Main Menu</button>
+        </form>
+    </div>
+    
+</body>
+
+</html>
