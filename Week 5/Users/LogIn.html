@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../CSS/styles.css">
+</head>
+
+<body>
+    <div class = "center">
+        <?php
+        session_start();
+        include "../Database/database.php"; // Include your database connection file
+
+        if ($_SERVER["REQUEST_METHOD"] === "POST") {
+            $Username = $_POST["Username"];
+            $Password = $_POST["Password"];
+
+            try {
+                $conn = new PDO("mysql:host=$db_host;dbname=$db_name", $db_username, $db_password);
+                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+                // Check if the username exists
+                $checkStmt = $conn->prepare("SELECT * FROM users WHERE Username = :Username");
+                $checkStmt->bindParam(':Username', $Username);
+                $checkStmt->execute();
+
+                if ($checkStmt->rowCount() > 0) {
+                    $user = $checkStmt->fetch(PDO::FETCH_ASSOC);
+
+                    if (password_verify($Password, $user['Password'])) {
+                        $_SESSION['Username'] = $Username; // Store username in session for later use
+                        header("Location: ../Pages/Menu.php"); // Redirect to menu page after successful login
+                        exit();
+                    } else {
+                        echo "Invalid username or password";
+                    }
+                } else {
+                    echo "</div>";
+                }
+            } catch (PDOException $e) {
+                echo "Error: " . $e->getMessage();
+                
+            }
+        }
+        ?>
+        <form action="../Pages/LogIn.html">
+            <button type="submit">Back</button>
+        </form>
+
+        </div>
+    
+
+</body>
+
+</html>
