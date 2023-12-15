@@ -1,1 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selling Figurines Form</title>
 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="center">WELCOME TO MY STORE! &#128513;</h1>
+    <p class="center">I am selling a few but LIMITED EDITION anime figurines. Time for me to let them go.</p>
+    <p class="center">REMINDER:- You can only have a maximum of 3pcs! </p>
+    <p class="center">         - I only accept CODs </p>
+    <p class="center">Here is the list:</p>
+    <div class="center">
+    <ul>
+        <li>Naruto Uzumaki</li>
+        <li>Sasuke Uchiha</li> 
+        <li>Son Goku</li> 
+        <li>Vegeta</li> 
+        <li>Luffy</li>
+    </div>
+
+    <hr>
+
+    <form action="Order.php" method="post">
+    <div class="container">
+
+        <h2 class="center">🛒ORDER NOW!🛒</h2>
+
+        <br>
+        
+        <div>
+            <label for="Fullname">Full name:</label>
+            <input type="text" id="Fullname" name="Fullname" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Address">Address:</label>
+            <input type="text" id="Address" name="Address" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Phone">Phone:</label>
+            <input type="tel" id="Phone" name="Phone" maxlength="11" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Email">Your Email:</label>
+            <input type="email" id="Email" name="Email" required>
+        </div>
+
+        <br>
+
+        <div>
+        <label for="Choose">Anime Character:</label>
+        <select id="Choose" name="Choose">
+            <option value="Naruto (Kid)">Naruto (Kid)</option>
+            <option value="Naruto Uzumaki">Naruto Uzumaki (Adult Base)</option>
+            <option value="Naruto Uzumaki (Sage Form)">Naruto Uzumaki (Sage Form)</option>
+            <option value="Naruto Uzumaki (Six Tails Rage)">Naruto Uzumaki (Six Tails)</option>
+            <option value="Naruto Uzumaki (Kyuubi Control Mode)">Naruto Uzumaki (Kyuubi Control Mode)</option>
+            <option value="Naruto Uzumaki (Kyuubi Control Sage Six Path)">Naruto Uzumaki (Kyuubi Control Sage Six Path)</option>
+            <option value="Sasuke (Kid)">Sasuke (Kid)</option>
+            <option value="Sasuk Uchicha (Clothing: Hebi)">Sasuke Uchiha (Hebi)</option>
+            <option value="Sasuk Uchicha (Clothing: Taka)">Sasuke Uchiha (Taka)</option>
+            <option value="Sasuk Uchicha (Clothing: Akatsuki)">Sasuke Uchiha (Akatsuki)</option>
+            <option value="Sasuk Uchicha (Eyes of Rinnegan)">Sasuke Uchiha (Rinnegan)</option>
+            <option value="Son Goku (Kid)">Goku (Kid)</option>
+            <option value="Son Goku (Adult Base)">Son Goku (Base)</option>
+            <option value="Son Goku Kaioken">Son Goku (Kaioken)</option>
+            <option value="Son Goku SSJ">Son Goku SSJ</option>
+            <option value="Son Goku SSJ2">Son Goku SSJ2</option>
+            <option value="Son Goku SSJ3">Son Goku SSJ3</option>
+            <option value="Son Goku GT (kid)">Son Goku GT (kid)</option>
+            <option value="Son Goku SSJ GT (Kid)">Son Goku SSJ GT (kid)</option>
+            <option value="Son Goku SSJ2 GT (kid)">Son Goku SSJ2 GT (kid)</option>
+            <option value="Son Goku SSJ3 GT (kid)">Son Goku SSJ3 GT (kid)</option>
+            <option value="Son Goku SSJ4 GT">Son Goku SSJ4 GT</option>
+            <option value="Son Goku SSJG">Son Goku SSJG</option> 
+            <option value="Son Goku SSJB">Son Goku SSJB</option>
+            <option value="Son Goku SSJB Kaioken">Son Goku SSJB Kaioken</option>
+            <option value="Son Goku Ultra Instinct">Son Goku Ultra Instinct</option>
+            <option value="Son Goku Mastered Ultra Instinct">Son Goku Mastered Ultra Instinct</option>
+            <option value="Vegeta (Kid)">Vegeta (Kid)</option>           
+            <option value="Vegeta Scouter (Adult Base )">Vegeta (Scouter)</option>
+            <option value="Vegeta SSJ">Vegeta SSJ</option>
+            <option value="Vegeta SSJ2">Vegeta SSJ2</option>
+            <option value="Majin Vegeta SSJ">Majin Vegeta SSJ</option>
+            <option value="Majin Vegeta SSJ2">Majin Vegeta SSJ2</option>
+            <option value="Vegeta SSJG">Vegeta SSJG</option>
+            <option value="Vegeta SSJB">Vegeta SSJB</option>
+            <option value="Vegeta SSJB Royal Blue">Vegeta SSJB Royal Blue</option>
+            <option value="Vegeta Ultra Ego">Vegeta Ultra Ego</option>            
+            <option value="Luffy (Kid)">Luffy (Kid)</option>
+            <option value="Luffy (Adult)">Luffy (Adult)</option>
+            <option value="Luffy (Second Gear)">Luffy (Second Gear)</option>
+            <option value="Luffy (Third Gear)">Luffy (Third Gear)</option>
+            <option value="Luffy (Fourth Gear Bounce Man)">Luffy (Fourth Gear Bounce Man)</option>
+            <option value="Luffy (Fourth Gear Snake Man)">Luffy (Fourth Gear Snake Man)</option>
+            <option value="Luffy (Joyboy)">Luffy (Joyboy)</option>
+        </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="Quantity">Quantity</label>
+            <input type="number" id="Quantity" name="Quantity" min="1" max="3" value="1">
+        </div>
+
+        <br>
+
+        <div class="group">
+            <label>Quality:</label>
+
+            <input type="radio" id="Regular" name="Quality" value="Regular" checked="checked">            
+            <label for="Regular">Regular - ₱1,500.00 </label>
+
+            <input type="radio" id="Limited" name="Quality" value="Limited">
+            <label for="Limited">Limited Edition - ₱3,000.00</label>
+        </div>
+
+        <br>
+
+        <div class="group">
+            <label>Shipping Method:</label>
+
+            <input type="radio" id="Standard" name="Method" value="Standard" checked="checked">
+            <label for="Standard">Standard Shipping - ₱50.00</label>
+
+            <input type="radio" id="Express" name="Method" value="Express">
+            <label for="Express">Express Shipping - ₱100.00</label>
+        </div>
+
+        <br>
+    
+        <label for="Information">Additional Instructions:</label>
+            <textarea id="Information" name="Information" rows="4"></textarea>
+
+        <div>
+            <input type="submit" value="Sumbit Order">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+    </div>
+
+    </form>
+</body>
+</html>
