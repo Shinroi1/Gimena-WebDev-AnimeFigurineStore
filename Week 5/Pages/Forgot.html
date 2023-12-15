@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <title>Forgot Password</title>
+</head>
+<body>
+    <div class="container">
+
+    <h2>Reset Password</h2>
+
+    <p>Enter the email address you registered and enter a new password</p>
+
+    <form method="post" action="../Users/Forgot.php" >
+
+        <label for="YEmail">Your Email:</label>
+        <input type="email" name="YEmail" id="YEmail">
+
+        <p>Please remember it well!</p>
+        <label for="Forgot"> New Password:</label> 
+        <input type="password" name="Forgot" id="Forgot">
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <br>
+
+    <form action = "../Pages/LogIn.html">
+        <button type="submit">Back</button>
+    </form>
+
+    </div>
+</body>
+</html>
