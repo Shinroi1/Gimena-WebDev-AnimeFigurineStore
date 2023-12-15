@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const urlParams = new URLSearchParams(window.location.search);
+                const passwordUpdated = urlParams.get('passwordUpdated');
+            
+                if (passwordUpdated === '1') {
+                    // Display your dialog box here, e.g., using a modal or alert
+                    alert("Password updated successfully!");
+                }
+            });
+            </script>
+
+        <h1>Login</h1>
+        <form method="POST" action="../Users/LogIn.php">
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" name="Username" required>
+
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password" required>
+
+            <p>Don't have an account yet? <a href="../Pages/Register.html">Register Now!</a></p>
+            <p><a href="../Pages/Forgot.html">Forgot password?</a></p>
+
+            <button type="submit">Login</button>
+        </form>
+        <br />
+        <form action="../pages/Index.html">
+            <button type="submit">Home</button>
+        </form>
+    </div>
+</body>
+
+</html>
